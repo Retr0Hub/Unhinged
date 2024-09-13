@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#emoji {
+    font-size: 100px; 
+    transition: transform 0.3s ease; 
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#nextButton {
+    position: fixed; /* Fixes the button in place */
+    top: 50%; /* Center vertically */
+    right: 20px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Adjust for exact center position */
+    width: 60px; /* Diameter of the circle */
+    height: 60px; /* Diameter of the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff; /* Default button color */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Makes the button circular */
+    font-size: 24px; /* Adjust size of the icon */
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add shadow for a 3D effect */
+    overflow: hidden; /* Ensure the gradient does not overflow the circle */
+    transition: background 0.3s ease; /* Smooth transition for background change */
+}
+
+#nextButton:hover {
+    background: linear-gradient(135deg, #007bff, #00d2ff); /* Default gradient */
+}

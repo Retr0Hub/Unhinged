@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Space between boxes */
+    margin-bottom: 20px;
+}
+
+.box {
+    font-size: 36px;
+    font-family: monospace;
+    background: #fff;
+    padding: 10px;
+    border: 2px solid #000;
+    width: 80px; /* Adjust width as needed */
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+#prevButton {
+    position: fixed; /* Fixes the button in place */
+    top: 50%; /* Center vertically */
+    left: 20px; /* Distance from the left edge */
+    transform: translateY(-50%); /* Adjust for exact center position */
+    width: 60px; /* Diameter of the circle */
+    height: 60px; /* Diameter of the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff; /* Default button color */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Makes the button circular */
+    font-size: 24px; /* Adjust size of the icon */
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add shadow for a 3D effect */
+    overflow: hidden; /* Ensure the gradient does not overflow the circle */
+    transition: background 0.3s ease; /* Smooth transition for background change */
+}
+
+#prevButton span {
+    margin-right: 0; /* No margin needed if the icon is centered */
+}
+
+#prevButton:hover {
+    background: linear-gradient(135deg, #007bff, #00d2ff); /* Gradient background */
+}
+
+#nextButton {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    right: 20px; /* Distance from the right edge */
+    transform: translateY(-50%); /* Adjust for exact center position */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+#nextButton:hover {
+    background: linear-gradient(135deg, #007bff, #00d2ff);
+}
